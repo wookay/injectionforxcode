@@ -18,14 +18,6 @@
 	<string>6.4</string>
 	<key>CFBundleVersion</key>
 	<string>6.4</string>
-	<key>NSPrincipalClass</key>
-	<string>INPluginMenuController</string>
-	<key>XCGCReady</key>
-	<true/>
-	<key>XCPluginHasUI</key>
-	<false/>
-	<key>XC4Compatible</key>
-	<true/>
 	<key>DVTPlugInCompatibilityUUIDs</key>
 	<array>
 		<string>C4A681B0-4A26-480E-93EC-1218098B9AA0</string>
@@ -55,5 +47,13 @@
 		<string>DA4FDFD8-C509-4D8B-8B55-84A7B66AE701</string>
 		<string>256D6169-AAB8-4535-A8E7-7401EA704432</string>
 	</array>
+	<key>NSPrincipalClass</key>
+	<string>INPluginMenuController</string>
+	<key>XC4Compatible</key>
+	<true/>
+	<key>XCGCReady</key>
+	<true/>
+	<key>XCPluginHasUI</key>
+	<false/>
 </dict>
 </plist>

@@ -359,10 +359,10 @@ if ( $learnt ) {
     rtfEscape( my $lout = $learnt );
     print "Learnt compile: $compileHighlight $lout\n";
 
-    print "!!Compiling $selectedFile\n";
+    print "!!🏇 Compile $selectedFile\n";
     foreach my $out (`time $learnt 2>&1`) {
-        print "!!$out";
-        print rtfEscape( $out );
+        # print "!!$out";
+        # print rtfEscape( $out );
     }
     error "Learnt compile failed" if $?;
 
@@ -546,8 +546,8 @@ print "!$bundlePath\n";
 # time we have saved the programmer.
 #
 
-my $injectionCountFileName = "${InjectionBundle}/injectionCount.txt";
-system "touch $injectionCountFileName";
-my $injectionCount = (loadFile( $injectionCountFileName )||0) + 1;
-saveFile( $injectionCountFileName, $injectionCount );
-print "!!$injectionCount injections performed so far.\n";
+#my $injectionCountFileName = "${InjectionBundle}/injectionCount.txt";
+#system "touch $injectionCountFileName";
+#my $injectionCount = (loadFile( $injectionCountFileName )||0) + 1;
+#saveFile( $injectionCountFileName, $injectionCount );
+#print "!!$injectionCount injections performed so far.\n";

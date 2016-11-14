@@ -446,7 +446,7 @@ static const char **addrPtr, *connectedAddress;
 
             write(loaderSocket, arch, alen);
 
-            INLog( @"Connected to \"%s\" plugin, ready to load %s code.", INJECTION_APPNAME, arch );
+            // INLog( @"Connected to \"%s\" plugin, ready to load %s code.", INJECTION_APPNAME, arch );
             connectedAddress = *addrPtr;
 
             int fdout = 0;
@@ -1002,7 +1002,8 @@ struct _in_objc_class { Class meta, supr; void *cache, *vtable; struct _in_objc_
                     [newClass class];
 #endif
                     Class oldClass = [self loadedClass:newClass notify:notify];
-                    NSLog( @"Ignore any warning, Swizzled %@ %p -> %p", className, newClass, oldClass );
+                    // NSLog( @"Ignore any warning, Swizzled %@ %p -> %p", className, newClass, oldClass );
+                    printf("🦁 Swizzled %s\n", className.UTF8String);
                     [injectedClasses addObject:oldClass];
                 }
             }
